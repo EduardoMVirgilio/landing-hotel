@@ -30,11 +30,11 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
   ];
 
   return (
-    <section id="home" className="pt-20">
+    <section id="home" className="pt-0">
       {banners.map((banner, index) => (
         <div 
           key={banner.id}
-          className={`relative min-h-[80vh] ${index !== 0 ? 'mt-4' : ''}`}
+          className={`relative min-h-[80vh] ${index !== 0 ? 'mt-8' : 'pt-24'}`}
         >
           <div className="absolute inset-0">
             <img 
